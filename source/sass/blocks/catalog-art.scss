@@ -1,0 +1,49 @@
+.catalog__art {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 261px;
+  background-image: url('../../img/main-img-filter.png'), url('../../img/catalog-art.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/main-img-filter.png'), url('../../img/catalog-art@2x.jpg');
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 36px;
+    background-position: inherit;
+    background-image: url('../../img/main-img-filter.png'), url('../../img/catalog-art-mob.jpg');
+
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../img/main-img-filter.png'), url('../../img/catalog-art-mob@2x.jpg');
+    }
+  }
+}
+
+.catalog__art h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  color: $white;
+  margin: 102px 0 0 0;
+  text-transform: uppercase;
+
+  @media (max-width: 767px) {
+    margin: 89px 0 0 0;
+  }
+}
+
+.catalog__art p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 130%;
+  color: $white;
+  margin: 20px 0 0 0;
+}

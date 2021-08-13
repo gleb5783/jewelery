@@ -1,0 +1,255 @@
+.main-product {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: 1023px) {
+    margin: 0;
+    padding: 0 45px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 15px;
+  }
+}
+
+.main-product__text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  margin-top: 130px;
+
+  @media (max-width: 1023px) {
+    margin-top: 80px;
+  }
+}
+
+.main-product__text h2 {
+  text-align: center;
+  margin: 0 0 35px 0;
+  color: $link-black;
+  font-size: 34px;
+  line-height: 130%;
+}
+
+.main-product__text a {
+  display: block;
+  font-style: normal;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $link-black;
+  text-decoration: none;
+  border-bottom: 1px solid $slider-arrow;
+
+  &:hover {
+    color: $placeholder;
+  }
+
+  &:active {
+    color: $link-black;
+  }
+}
+
+.main-product__slider-btn {
+  display: flex;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  width: 29px;
+  height: 9px;
+  background-color: transparent;
+  stroke: $slider-arrow;
+  position: absolute;
+
+
+  &:hover {
+    stroke: $black;
+  }
+
+  &:active {
+    stroke: $placeholder;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.main-product__slider-btn--left {
+  top: 46%;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.main-product__slider-btn--right {
+  top: 46%;
+  right: 0;
+}
+
+.main-product__slider {
+  margin-top: 60px;
+
+  @media (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main-product__slider-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+  @media (max-width: 1023px) {
+    max-width: 678px;
+    width: 100%;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 451px;
+  }
+
+  @media (max-width: 440px) {
+    max-width: 286px;
+  }
+}
+
+.main-product__slider-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.main-product__slider-item img {
+  display: block;
+
+  @media (max-width: 1023px) {
+    width: 324px;
+    height: 340px;
+  }
+
+  @media (max-width: 767px) {
+    width: 130px;
+    height: 136px;
+  }
+}
+
+.main-product__item-name {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $link-black;
+  text-align: center;
+  margin: 25px 0 0 0;
+}
+
+.main-product__item-price {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 130%;
+  color: $link-black;
+  margin: 15px 0 0 0;
+}
+
+.main-product__slider-button-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 1023px) {
+    margin: 50px 0 80px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 40px 0 70px;
+
+    & button {
+      display: none;
+    }
+  }
+}
+
+.main-product__slider-counter-mob {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: $link-black;
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+
+    & div:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.main-product__slider-toogle {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  border: none;
+  color: $disable-btn;
+  height: 20px;
+  background-color: transparent;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &:hover {
+    color: $link-black;
+  }
+
+  &:active {
+    color: $link-black;
+  }
+}
+
+.main-product__slider-toogle--active {
+  color: $link-black;
+}
+
+.main-product__slider--tablet {
+  display: none;
+
+  @media (max-width: 1023px) {
+    display: flex;
+  }
+}
+
+.main-product__bottom-margin {
+  margin-bottom: 130px;
+
+  @media (max-width: 1023px) {
+    margin: 0;
+  }
+}
