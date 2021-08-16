@@ -551,6 +551,13 @@
   }
 }
 
+.catalog__list-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .catalog__list-item h2 {
   color: $link-black;
   font-family: 'Poppins', 'Arial', sans-serif;
