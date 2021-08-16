@@ -8,12 +8,12 @@ function isEscEvent(evt) {
   return evt.key === ESCAPE_BUTTON || evt.key === ESC_BUTTON;
 }
 
-function asd () {
+function tabIndexOn () {
   document.querySelectorAll('*').forEach((el) => el.setAttribute('tabindex', '-1'));
   login.querySelectorAll('*').forEach((a) => a.setAttribute('tabindex', 'auto'));
 }
 
-function zxc () {
+function tabIndexOff () {
   document.querySelectorAll('*').forEach((el) => el.setAttribute('tabindex', 'auto'));
 }
 
@@ -21,7 +21,7 @@ function closeEscMenu(evt) {
   if (isEscEvent(evt)) {
     login.classList.add('login--hidden');
     document.body.style.overflow = 'auto';
-    zxc();
+    tabIndexOff();
   }
 }
 
@@ -29,7 +29,7 @@ function closeClickPopup(evt) {
   if(evt.target === login) {
     login.classList.add('login--hidden');
     document.body.style.overflow = 'auto';
-    zxc();
+    tabIndexOff();
   }
 }
 
@@ -38,7 +38,7 @@ var closePopup = () => {
   document.removeEventListener('keydown', closeEscMenu);
   login.classList.add('login--hidden');
   document.body.style.overflow = 'auto';
-  zxc();
+  tabIndexOff();
 }
 
 var showPopup = (evt) => {
@@ -47,7 +47,7 @@ var showPopup = (evt) => {
   document.addEventListener('keydown', closeEscMenu);
   login.classList.remove('login--hidden');
   document.body.style.overflow = 'hidden';
-  asd();
+  tabIndexOn();
 }
 
 openPopup.addEventListener('click', showPopup);
