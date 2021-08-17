@@ -5,6 +5,7 @@ function escClose (evt) {
   if(isEscEvent(evt)) {
     menuToggle();
     document.removeEventListener('keydown', escClose);
+    document.querySelector('.body').classList.remove('body--overflow');
   }
 }
 
@@ -18,9 +19,11 @@ function menuToggle () {
   document.querySelector('.header__basket').classList.toggle('header__basket--open');
   document.querySelector('.header__list-item-bottom-group').classList.toggle('header__list-item-bottom-group--hidden');
   document.addEventListener('keydown', escClose);
+  document.querySelector('.body').classList.toggle('body--overflow');
 }
 
 menuLink.forEach((el) => el.addEventListener('click', function() {
+  document.querySelector('.body').classList.remove('body--overflow');
   menuToggle();
   document.removeEventListener('keydown', escClose);
 }));

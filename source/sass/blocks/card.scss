@@ -6,10 +6,12 @@
   flex-wrap: wrap;
   margin-top: 80px;
   justify-content: space-between;
+  padding: 0 20px;
 
   @media (max-width: 1023px) {
     margin: 60px 0 0 0;
     padding: 0 45px;
+    justify-content: center;
   }
 
   @media (max-width: 767px) {
@@ -120,10 +122,12 @@
 
   @media (max-width: 1023px) {
     max-width: 319px;
+    margin-left: 40px;
   }
 
   @media (max-width: 767px) {
     margin-top: 50px;
+    margin-left: 0;
   }
 }
 

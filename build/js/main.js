@@ -23,6 +23,16 @@ function closeFormFilter (evt) {
     document.querySelector('.catalog__filter').classList.toggle('catalog__filter--hidden');
     filterCloseBtn.removeEventListener('click', closeForm);
     filterCloseBtn.removeEventListener('click', closeFormFilter);
+    document.removeEventListener('keydown', closeEscFilter);
+  }
+}
+
+function closeEscFilter(evt) {
+  if(isEscEvent(evt)) {
+    document.querySelector('.catalog__filter').classList.toggle('catalog__filter--hidden');
+    filterCloseBtn.removeEventListener('click', closeForm);
+    filterCloseBtn.removeEventListener('click', closeFormFilter);
+    document.removeEventListener('keydown', closeEscFilter);
   }
 }
 
@@ -30,12 +40,14 @@ function closeForm () {
   document.querySelector('.catalog__filter').classList.toggle('catalog__filter--hidden');
   filterCloseBtn.removeEventListener('click', closeForm);
   filterCloseBtn.removeEventListener('click', closeFormFilter);
+  document.removeEventListener('keydown', closeEscFilter);
 }
 
 function openFilter() {
   document.addEventListener('click', closeFormFilter);
   document.querySelector('.catalog__filter').classList.toggle('catalog__filter--hidden');
   filterCloseBtn.addEventListener('click', closeForm);
+  document.addEventListener('keydown', closeEscFilter);
 }
 
 if (filterShowBtn) {
@@ -49,6 +61,7 @@ function escClose (evt) {
   if(isEscEvent(evt)) {
     menuToggle();
     document.removeEventListener('keydown', escClose);
+    document.querySelector('.body').classList.remove('body--overflow');
   }
 }
 
@@ -62,9 +75,11 @@ function menuToggle () {
   document.querySelector('.header__basket').classList.toggle('header__basket--open');
   document.querySelector('.header__list-item-bottom-group').classList.toggle('header__list-item-bottom-group--hidden');
   document.addEventListener('keydown', escClose);
+  document.querySelector('.body').classList.toggle('body--overflow');
 }
 
 menuLink.forEach((el) => el.addEventListener('click', function() {
+  document.querySelector('.body').classList.remove('body--overflow');
   menuToggle();
   document.removeEventListener('keydown', escClose);
 }));

@@ -14,6 +14,16 @@ function closeFormFilter (evt) {
     document.querySelector('.catalog__filter').classList.toggle('catalog__filter--hidden');
     filterCloseBtn.removeEventListener('click', closeForm);
     filterCloseBtn.removeEventListener('click', closeFormFilter);
+    document.removeEventListener('keydown', closeEscFilter);
+  }
+}
+
+function closeEscFilter(evt) {
+  if(isEscEvent(evt)) {
+    document.querySelector('.catalog__filter').classList.toggle('catalog__filter--hidden');
+    filterCloseBtn.removeEventListener('click', closeForm);
+    filterCloseBtn.removeEventListener('click', closeFormFilter);
+    document.removeEventListener('keydown', closeEscFilter);
   }
 }
 
@@ -21,12 +31,14 @@ function closeForm () {
   document.querySelector('.catalog__filter').classList.toggle('catalog__filter--hidden');
   filterCloseBtn.removeEventListener('click', closeForm);
   filterCloseBtn.removeEventListener('click', closeFormFilter);
+  document.removeEventListener('keydown', closeEscFilter);
 }
 
 function openFilter() {
   document.addEventListener('click', closeFormFilter);
   document.querySelector('.catalog__filter').classList.toggle('catalog__filter--hidden');
   filterCloseBtn.addEventListener('click', closeForm);
+  document.addEventListener('keydown', closeEscFilter);
 }
 
 if (filterShowBtn) {
