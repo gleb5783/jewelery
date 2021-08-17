@@ -42,7 +42,7 @@
   }
 }
 
-.catalog__filter-form--hidden {
+.catalog__filter--hidden {
   display: block;
 
   @media (max-width: 1023px) {
@@ -83,7 +83,7 @@
   }
 }
 
-.catalog__form {
+.catalog__filter form{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -148,6 +148,8 @@
   min-height: 68px;
   border: 1px solid $slider-arrow;
   background-color: $white;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: 1023px) {
     border: none;
@@ -155,28 +157,21 @@
   }
 }
 
-.catalog__form-fieldset h2 {
+.catalog__filter-show-btn {
   font-family: 'Poppins', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
+  align-items: center;
   color: $link-black;
-  margin: 28px 0 30px;
-  padding: 0 25px;
-}
-
-.catalog__filter-show-btn {
+  padding: 10px 25px;
+  margin: 20px 0;
   cursor: pointer;
-  display: block;
-  width: 15px;
-  height: 8px;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
   border: none;
-  padding: 0;
 
   & svg {
     stroke: $slider-arrow;
@@ -194,7 +189,9 @@
 }
 
 .catalog__filter-show-btn--open {
-  transform: rotate(180deg);
+  & svg {
+    transform: rotate(180deg);
+  }
 }
 
 //* Блок с чекбоксами по продукту *//
@@ -232,6 +229,14 @@
   line-height: 130%;
   color: $link-black;
   padding: 0 0 0 25px;
+
+  &:hover {
+    color: $slider-arrow;
+  }
+
+  &:active {
+    color: $link-black;
+  }
 }
 
 .catalog__product-checkbox-wrapper input + label::before {
@@ -293,6 +298,14 @@
   line-height: 130%;
   color: $link-black;
   padding: 0 0 0 25px;
+
+  &:hover {
+    color: $slider-arrow;
+  }
+
+  &:active {
+    color: $link-black;
+  }
 }
 
 .catalog__material-checkbox-wrapper input + label::before {
@@ -354,6 +367,14 @@
   line-height: 130%;
   color: $link-black;
   padding: 0 0 0 25px;
+
+  &:hover {
+    color: $slider-arrow;
+  }
+
+  &:active {
+    color: $link-black;
+  }
 }
 
 .catalog__collection-checkbox-wrapper input + label::before {
@@ -429,7 +450,11 @@
   right: 0%;
 }
 
-.catalog__filter--hidden {
+.catalog__material-checkbox--hidden {
+  display: none;
+}
+
+.catalog__collection-checkbox--hidden {
   display: none;
 }
 

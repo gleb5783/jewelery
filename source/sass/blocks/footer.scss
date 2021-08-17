@@ -36,7 +36,7 @@
   }
 }
 
-.foooter__mailing-list {
+.footer__mailing-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -50,7 +50,7 @@
   }
 }
 
-.foooter__mailing-list h2 {
+.footer__mailing-list h2 {
   color: $white;
   font-style: normal;
   font-weight: bold;
@@ -64,7 +64,7 @@
   }
 }
 
-.foooter__mailing-list p {
+.footer__mailing-list p {
   color: $placeholder;
   font-family: 'Poppins', 'Arial', sans-serif;
   font-style: normal;
@@ -74,11 +74,11 @@
   margin: 0 0 54px;
 }
 
-.foooter__mailing-form {
+.footer__mailing-form form {
   position: relative;
 }
 
-.foooter__mailing-form input {
+.footer__mailing-form input {
   width: 100%;
   max-width: 500px;
   height: 40px;

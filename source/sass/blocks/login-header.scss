@@ -2,12 +2,12 @@
   z-index: 20;
 }
 
-.logo__wrapper {
+.login-header__wrapper {
   display: flex;
   justify-content: center;
 }
 
-.logo__wrapper a svg {
+.login-header__wrapper a svg {
   fill: $white;
   width: 86px;
   height: 86px;

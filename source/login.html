@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ювелирный магазин</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font">
 </head>
 <body class="body">
   <svg style="display: none;">
@@ -15,7 +16,7 @@
   </svg>
 
   <header class="login-header">
-    <div class="logo__wrapper">
+    <div class="login-header__wrapper">
       <a href="index.html">
         <svg>
           <use xlink:href="#logo"></use>
@@ -25,6 +26,7 @@
   </header>
 
   <section class="login">
+    <h1 class="visually-hidden">Вход на сайт</h1>
     <div class="login__wrapper">
       <h2>Log In</h2>
 
@@ -46,7 +48,6 @@
     </div>
   </section>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

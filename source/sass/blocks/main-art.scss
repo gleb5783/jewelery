@@ -5,11 +5,11 @@
   justify-content: center;
   min-height: 463px;
   width: 100%;
-  max-width: 1366px;
   margin: 0 auto;
   background-image: url('../../img/main-img-filter.png') ,url('../../img/main-img.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     background-image: url('../../img/main-img-filter.png'), url('../../img/main-img@2x.jpg');
