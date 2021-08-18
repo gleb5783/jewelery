@@ -23,9 +23,9 @@ function menuToggle () {
 }
 
 menuLink.forEach((el) => el.addEventListener('click', function() {
-  document.querySelector('.body').classList.remove('body--overflow');
   menuToggle();
   document.removeEventListener('keydown', escClose);
+  document.querySelector('.body').classList.remove('body--overflow');
 }));
 
 openMenuBtn.addEventListener('click', menuToggle);
