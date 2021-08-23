@@ -24,12 +24,12 @@
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url('../../img/login-img.jpg');
+  background-image: url('../img/login-img.jpg');
   background-repeat: no-repeat;
   background-position: top;
 
   @media (min-resolution: 2dppx) {
-    background-image: url('../../img/login-img@2x.jpg');
+    background-image: url('../img/login-img@2x.jpg');
   }
 
   @media (max-width: 767px) {

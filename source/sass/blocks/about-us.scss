@@ -17,7 +17,7 @@
 }
 
 .about-us h2 {
-  margin: 130px 0 60px;
+  margin: 122px 0 47px;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
@@ -25,10 +25,14 @@
   letter-spacing: 0.03em;
   color: $link-black;
 
+  @media (max-width: 1023px) {
+    margin: 70px 0 45px;
+  }
+
   @media (max-width: 767px) {
-    margin: 70px 0 40px;
     text-align: center;
     width: 100%;
+    margin: 60px 0 28px;
   }
 }
 
@@ -85,12 +89,12 @@
   line-height: 130%;
   width: 100%;
   max-width: 527px;
-  margin: 0 0 49px 50px;
+  margin: 0 0 38px 50px;
 
   @media (max-width: 767px) {
     font-size: 14px;
     padding: 0 60px 0 25px;
-    margin: 25px 0;
+    margin: 0 0 10px;
   }
 }
 
@@ -99,11 +103,12 @@
 }
 
 .about-us__item-button {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
-  padding: 20px 0;
+  padding: 13px 0;
   margin: 30px 50px 0 38px;
   border: none;
   background-color: $white;
@@ -113,6 +118,10 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 130%;
+
+  & br {
+    display: none;
+  }
 
   & svg {
     stroke: $slider-arrow;
@@ -134,18 +143,27 @@
   }
 
   @media (max-width: 767px) {
-    top: 25px;
-    right: 25px;
+    margin: 17px 0 18px 25px;
+    padding: 0 20px 0 0;
+    font-size: 16px;
+
+    & br {
+      display: block;
+    }
 
     & svg {
+      position: absolute;
+      z-index: 8;
       width: 20px;
       height: 10px;
+      right: 25px;
+      top: 0px;
     }
   }
 }
 
 .about-us__item-button--open {
   & svg {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
   }
 }

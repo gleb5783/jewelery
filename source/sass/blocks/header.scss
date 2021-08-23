@@ -17,7 +17,6 @@
 
   @media (max-width: 1023px) {
     border: none;
-    min-height: 126px;
   }
 }
 
@@ -35,10 +34,12 @@
   @media (max-width: 1170px) {
     padding: 0 20px;
     margin: 0;
+    min-height: 126px;
   }
 
   @media (max-width: 767px) {
     padding: 0 15px;
+    min-height: 91px;
   }
 }
 
@@ -62,7 +63,7 @@
     background-repeat: no-repeat;
 
     @media (max-width: 1023px) {
-      background-image: url('../../img/serch-white.svg');
+      background-image: url('../img/serch-white.svg');
       top: 148px;
       left: 37px;
     }
@@ -184,10 +185,23 @@
   stroke: $white;
 }
 
+.header__logo {
+  display: block;
+  margin: 15px 87px 0 0;
+
+  @media (max-width: 1023px) {
+    margin: 0;
+  }
+}
+
 .header__logo svg {
   @media (max-width: 767px) {
     width: 52px;
     height: 52px;
+  }
+
+  &:hover {
+    stroke: $link-black;
   }
 }
 
@@ -202,12 +216,6 @@
 
   @media (max-width: 1023px) {
     display: none;
-    position: absolute;
-    left: 0;
-    top: 126px;
-    background-color: $slider-arrow;
-    width: 100%;
-    z-index: 8;
   }
 }
 
@@ -221,7 +229,7 @@
   max-width: 1147px;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 0 46px;
   justify-content: center;
   gap: 35px;
   min-height: 60px;
@@ -233,7 +241,7 @@
     padding-left: 45px;
     padding-bottom: 148px;
     margin-top: 135px;
-    overflow-y: auto;
+    overflow-y: scroll;
     display: none;
   }
 
@@ -330,8 +338,7 @@
   @media (max-width: 1023px) {
     display: none;
     position: absolute;
-    bottom: -680px;
-    z-index: 10;
+    bottom: 80px;
     color: $white;
     left: 45px;
   }

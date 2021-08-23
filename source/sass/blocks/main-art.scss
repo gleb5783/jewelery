@@ -6,32 +6,32 @@
   min-height: 463px;
   width: 100%;
   margin: 0 auto;
-  background-image: url('../../img/main-img-filter.png') ,url('../../img/main-img.jpg');
+  background-image: url('../img/main-img-filter.png') ,url('../img/main-img.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url('../../img/main-img-filter.png'), url('../../img/main-img@2x.jpg');
+    background-image: url('../img/main-img-filter.png'), url('../img/main-img@2x.jpg');
     background-position: center;
     background-size: contain;
   }
 
   @media (max-width: 1023px) {
-    background-image: url('../../img/main-img-filter.png'), url('../../img/main-img-tablet.jpg');
+    background-image: url('../img/main-img-filter.png'), url('../img/main-img-tablet.jpg');
     background-size: cover, cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../../img/main-img-filter.png'), url('../../img/main-img-tablet@2x.jpg');
+      background-image: url('../img/main-img-filter.png'), url('../img/main-img-tablet@2x.jpg');
     }
   }
 
   @media (max-width: 767px) {
-    background-image: url('../../img/main-img-filter.png'), url('../../img/main-img-mob.jpg');
+    background-image: url('../img/main-img-filter.png'), url('../img/main-img-mob.jpg');
     background-size: cover, cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url('../../img/main-img-filter.png'), url('../../img/main-img-mob@2x.jpg');
+      background-image: url('../img/main-img-filter.png'), url('../img/main-img-mob@2x.jpg');
     }
   }
 }
