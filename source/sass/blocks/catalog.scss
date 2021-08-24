@@ -1,9 +1,8 @@
 .catalog__wrapper {
   display: flex;
-  justify-content: space-between;
   margin: 0 auto;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1231px;
   margin-top: 80px;
 
   @media (max-width: 1220px) {
@@ -13,19 +12,21 @@
   @media (max-width: 1023px) {
     margin-top: 50px;
     flex-direction: column;
-    padding: 0 45px;
+    padding: 0 15px 0 45px;
+    align-items: center;
   }
 
   @media (max-width: 767px) {
-    padding: 0 15px;
+    padding: 0;
     align-items: center;
+    margin-top: 41px;
   }
 }
 
 .catalog__filter {
   max-width: 250px;
   width: 100%;
-  margin-right: 50px;
+  margin: 0 51px 0 30px;
 
   @media (max-width: 1023px) {
     max-width: none;
@@ -60,8 +61,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 678px;
     min-height: 68px;
     margin-bottom: 50px;
+    margin-right: 30px;
     border: 1px solid $slider-arrow;
     background-color: $slider-arrow;
     font-family: 'Poppins', 'Arial', sans-serif;
@@ -79,6 +82,10 @@
     &:active {
       background-color: $slider-arrow;
       color: $white;
+    }
+
+    @media (max-width: 767px) {
+      margin: 0 0 40px;
     }
   }
 }
@@ -166,7 +173,7 @@
   align-items: center;
   color: $link-black;
   padding: 10px 25px;
-  margin: 20px 0;
+  margin: 14px 0 12px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -197,13 +204,13 @@
 //* Блок с чекбоксами по продукту *//
 
 .catalog__product-checkbox {
-  margin: 0 0 29px 35px;
+  margin: 0 0 25px 33px;
   display: flex;
   flex-direction: column;
 }
 
 .catalog__product-checkbox-wrapper:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .catalog__product-checkbox-wrapper input {
@@ -408,7 +415,7 @@
   width: 200px;
   height: 2px;
   background-color: $card-background;
-  margin-bottom: 30px;
+  margin-bottom: 51px;
   margin-left: 25px;
   display: flex;
   align-items: center;
@@ -535,12 +542,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: center;
 
   @media (max-width: 1023px) {
     max-width: none;
-    justify-content: space-between;
-    gap: 30px;
+    justify-content: center;
   }
 
   @media (max-width: 767px) {
@@ -554,9 +559,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin-right: 30px;
+  min-height: 374px;
+  overflow: hidden;
 
   @media (max-width: 1023px) {
     margin: 0;
+    min-height: 310px;
+    padding-right: 30px;
 
     & img {
       width: 206px;
@@ -565,8 +574,10 @@
   }
 
   @media (max-width: 767px) {
-    max-width: 130px;
+    max-width: 160px;
     width: 100%;
+    padding: 0 15px;
+    min-height: 244px;
 
 
     & img {
@@ -590,8 +601,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 130%;
-  margin: 25px 0 0 0;
+  margin: 17px 0 0 0;
   text-align: center;
+
+  @media (max-width: 767px) {
+    margin: 13px 0 0;
+  }
 }
 
 .catalog__list-item p {
@@ -601,11 +616,11 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 130%;
-  margin: 15px 0 44px 0;
+  margin: 5px 0 20px 0;
   padding: 0;
   text-align: center;
 
   @media (max-width: 767px) {
-    margin: 15px 0 30px 0;
+    margin: 7px 0 25px 0;
   }
 }
