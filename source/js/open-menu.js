@@ -1,5 +1,6 @@
 var openMenuBtn = document.querySelector('.header__burger');
-var menuLink = document.querySelectorAll('.header__drop-meny-list a');
+var menuLink = document.querySelectorAll('.header__drop-menu-list a');
+
 
 function escClose (evt) {
   if(isEscEvent(evt)) {
@@ -22,10 +23,16 @@ function menuToggle () {
   document.querySelector('.body').classList.toggle('body--overflow');
 }
 
-menuLink.forEach((el) => el.addEventListener('click', function() {
-  menuToggle();
-  document.removeEventListener('keydown', escClose);
-  document.querySelector('.body').classList.remove('body--overflow');
+menuLink.forEach((el) => el.addEventListener('click', function(evt) {
+  if(el.getAttribute('href') === '#') {
+    evt.preventDefault();
+  }
+
+  else {
+    menuToggle();
+    document.removeEventListener('keydown', escClose);
+    document.querySelector('.body').classList.remove('body--overflow');
+  }
 }));
 
 openMenuBtn.addEventListener('click', menuToggle);

@@ -2,7 +2,8 @@ var ESC_BUTTON = 'Esc';
 var ESCAPE_BUTTON = 'Escape';
 var login = document.querySelector('.login');
 var closePopupButton = document.querySelector('.login__close');
-var openPopup = document.querySelector('.header__login');
+var openPopup = document.querySelectorAll('.header__login');
+
 
 function isEscEvent(evt) {
   return evt.key === ESCAPE_BUTTON || evt.key === ESC_BUTTON;
@@ -46,9 +47,12 @@ var showPopup = (evt) => {
   document.addEventListener('click', closeClickPopup);
   document.addEventListener('keydown', closeEscMenu);
   login.classList.remove('login--hidden');
+  document.querySelector('.login__input-wrapper input[type=email]').focus();
   document.body.style.overflow = 'hidden';
   tabIndexOn();
 }
 
-openPopup.addEventListener('click', showPopup);
+openPopup.forEach((link) => link.addEventListener('click', showPopup));
+
+// openPopup.addEventListener('click', showPopup);
 closePopupButton.addEventListener('click', closePopup);

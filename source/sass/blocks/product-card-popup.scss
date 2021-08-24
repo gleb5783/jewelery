@@ -18,15 +18,14 @@
   max-width: 500px;
   height: 439px;
   background-color: $white;
-  left: 0;
-  top: -300px;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  margin-left: -250px;
+  left: 50%;
+  top: 20%;
 
   @media (max-width: 767px) {
     max-width: 290px;
     height: 519px;
+    margin-left: -145px;
   }
 }
 
