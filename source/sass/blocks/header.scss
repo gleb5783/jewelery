@@ -45,6 +45,8 @@
 
 .header__head-list-item {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
 }
 
 .header__input-wrapper {
@@ -213,6 +215,9 @@
 
 .header__list-item-bottom-group {
   display: block;
+  max-width: 1147px;
+  width: 100%;
+  margin: 0 auto;
 
   @media (max-width: 1023px) {
     display: none;
@@ -231,9 +236,13 @@
   margin: 0 auto;
   padding: 0 0 0 46px;
   justify-content: center;
-  gap: 35px;
+  flex-wrap: wrap;
   min-height: 60px;
   align-items: center;
+
+  & > li {
+    margin: 10px 36px 10px 0;
+  }
 
   @media (max-width: 1023px) {
     flex-direction: column;
@@ -324,7 +333,8 @@
   font-size: 14px;
   line-height: 21px;
   display: block;
-  margin-right: 35px;
+  margin-right: 25px;
+  padding: 10px 10px 10px 0;
   text-decoration: none;
 
   &:hover {
@@ -361,6 +371,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
+  padding: 10px 10px 10px 0;
   display: block;
   text-decoration: none;
 

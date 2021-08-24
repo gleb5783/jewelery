@@ -418,3 +418,22 @@
     margin: 0;
   }
 }
+
+.main-product__slider-dotted {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: flex;
+    margin-top: 40px;
+    color: $link-black;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+
+    & div:nth-child(2) {
+      margin: 0 10px;
+    }
+  }
+}
