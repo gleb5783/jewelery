@@ -18,11 +18,6 @@
   max-width: 444px;
   height: 586px;
   background-color: $login;
-  // left: 0;
-  // top: -300px;
-  // right: 0;
-  // bottom: 0;
-  // margin: auto;
   margin-left: -222px;
   left: 50%;
   top: 20%;
@@ -78,6 +73,7 @@
   display: flex;
   padding: 0;
   width: 20px;
+  padding: 4px;
   height: 20px;
   border-radius: 100%;
   justify-content: center;
@@ -145,6 +141,7 @@
 .login__input-wrapper input {
   padding: 10px;
   width: 100%;
+  border-radius: 0;
   border: none;
   border-bottom: 1px solid $link-black;
   background-color: transparent;

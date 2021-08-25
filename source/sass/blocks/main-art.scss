@@ -15,7 +15,7 @@
   @media (min-resolution: 2dppx) {
     background-image: url('../img/main-img-filter.png'), url('../img/main-img@2x.jpg');
     background-position: center;
-    background-size: contain;
+    background-size: cover;
   }
 
   @media (max-width: 1023px) {

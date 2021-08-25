@@ -234,6 +234,7 @@
   @media (max-width: 767px) {
     top: 90px;
     max-height: calc(100vh - 90px);
+    height: 100vh;
   }
 }
 
@@ -268,6 +269,7 @@
 
   @media (max-width: 767px) {
     padding-left: 15px;
+    justify-content: flex-start;
   }
 }
 
@@ -399,7 +401,7 @@
   }
 
   @media (max-width: 1023px) {
-    margin-right: 25px;
+    margin-right: 15px;
 
     & span {
       display: none;
@@ -421,7 +423,7 @@
   }
 
   @media (max-width: 767px) {
-    margin: 0;
+    margin: 0 -10px 0 0;
   }
 }
 
@@ -521,9 +523,13 @@
     &:active {
       color: $link-black;
     }
+  }
+}
 
-    @media (max-width: 767px) {
+.header__drop-menu-tablet--hidden {
+  display: none;
 
-    }
+  @media (max-width: 1023px) {
+    display: block;
   }
 }
