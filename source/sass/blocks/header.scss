@@ -47,6 +47,22 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 200px;
+
+  &:last-child {
+    margin: -10px -19px 0 0px;
+
+    @media (max-width: 1023px) {
+      margin: 0;
+    }
+  }
+}
+
+form {
+  margin: -10px 0 0 -4px;
+
+  @media (max-width: 1023px) {
+    margin: 0;
+  }
 }
 
 .header__input-wrapper {
@@ -59,8 +75,8 @@
     display: block;
     z-index: 9;
     position: absolute;
-    top: 4px;
-    left: 0;
+    top: -7px;
+    left: -13px;
     background-image: url('../img/serch.svg');
     background-repeat: no-repeat;
 

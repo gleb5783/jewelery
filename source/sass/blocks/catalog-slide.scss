@@ -45,6 +45,7 @@
 
   @media (max-width: 767px) {
     justify-content: center;
+    margin-left: 31px;
   }
 }
 
@@ -65,6 +66,10 @@
 
   &:active {
     color: $disable-btn;
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 25px;
   }
 }
 
