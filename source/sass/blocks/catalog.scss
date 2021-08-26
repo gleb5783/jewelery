@@ -434,7 +434,7 @@
 }
 
 .catalog__slider-range-background {
-  width: 90px;
+  width: 106px;
   height: 2px;
   background-color: $slider-arrow;
   position: relative;
@@ -456,16 +456,17 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 130%;
-  margin-top: 17px;
+  margin-top: 22px;
+  margin-left: -6px;
   margin-bottom: 23px;
 }
 
 .catalog__slider-range-circle--left {
-  left: 0%;
+  left: -2px;
 }
 
 .catalog__slider-range-circle--right {
-  right: 0%;
+  right: -10px;
 }
 
 .catalog__material-checkbox--hidden {

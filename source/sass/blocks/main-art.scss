@@ -27,6 +27,10 @@
     }
   }
 
+  @media (max-width: 769px) and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+
   @media (max-width: 767px) {
     background-image: url('../img/main-img-filter.png'), url('../img/main-img-mob.jpg');
     background-size: cover, cover;
@@ -48,8 +52,13 @@
   line-height: 130%;
   letter-spacing: 0.03em;
 
+  @media (max-width: 769px) and (min-width: 768px) {
+    margin: 182px 0 0 -13px;
+  }
+
   @media (max-width: 767px) {
     font-size: 38px;
+    margin-top: 5px;
   }
 }
 
@@ -60,6 +69,10 @@
   font-size: 38px;
   line-height: 130%;
   color: $white;
+
+  @media (max-width: 769px) and (min-width: 768px) {
+    margin: -7px 0 0 -17px;
+  }
 
   @media (max-width: 767px) {
     font-size: 34px;

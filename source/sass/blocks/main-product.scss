@@ -354,6 +354,10 @@
     left: 0;
   }
 
+  @media (max-width: 1365px) {
+    left: 20px;
+  }
+
   @media (max-width: 1023px) {
     left: 45px;
     top: -93px;
@@ -469,7 +473,8 @@
   }
 
   @media (max-width: 769px) and (min-width: 768px) {
-    margin-right: 17px !important;
+    margin-right: 30px !important;
+    width: 324px !important;
   }
 
   @media (max-width: 322px) {

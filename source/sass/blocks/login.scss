@@ -15,14 +15,14 @@
 .login__wrapper {
   position: absolute;
   width: 100%;
-  max-width: 444px;
+  max-width: 430px;
   height: 586px;
   background-color: $login;
   margin-left: -222px;
   left: 50%;
   top: 20%;
   background-image: url('../img/login-img.jpg');
-  background-color: $white;
+  background-color: $login;
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
@@ -35,7 +35,7 @@
     max-width: 270px;
     margin-left: -135px;
     background-size: 270px 84px;
-    height: 540px;
+    height: 470px;
   }
 }
 
@@ -73,7 +73,6 @@
   display: flex;
   padding: 0;
   width: 20px;
-  padding: 4px;
   height: 20px;
   border-radius: 100%;
   justify-content: center;
@@ -81,8 +80,13 @@
   border: none;
   background-color: transparent;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 17px;
+  right: 17px;
+
+  & svg {
+    width: 14px;
+    height: 14px;
+  }
 
   &:hover {
     background-color: $slider-arrow;
@@ -134,7 +138,7 @@
   width: 100%;
 
   &:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 27px;
   }
 }
 
@@ -168,7 +172,7 @@
   font-weight: 500;
   font-size: 12px;
   display: block;
-  margin-left: 210px;
+  margin-left: 200px;
   line-height: 18px;
   margin-top: 10px;
 
@@ -193,7 +197,7 @@
   background-color: $slider-arrow;
   padding: 0;
   border: 1px solid $slider-arrow;
-  margin: 20px 0 0 0;
+  margin: 16px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;

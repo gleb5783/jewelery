@@ -41,6 +41,7 @@
 .catalog-slide__page-number-wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin-right: 16px;
 
 
   @media (max-width: 767px) {
@@ -52,7 +53,7 @@
 .catalog-slide__page-number {
   display: block;
   text-decoration: none;
-  margin-right: 15px;
+  margin-right: 13px;
   font-family: 'Poppins', 'Arial', sans-serif;
   font-style: normal;
   font-weight: 500;
