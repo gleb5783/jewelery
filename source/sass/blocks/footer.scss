@@ -263,11 +263,8 @@
   padding: 0;
 
   @media (max-width: 1042px) and (min-width: 1024px) {
-    flex-direction: row;
-
     & > li {
       margin-top: 10px;
-      margin-right: 30px;
     }
   }
 

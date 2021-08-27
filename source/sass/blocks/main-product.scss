@@ -465,10 +465,14 @@
 
   @media (max-width: 1200px) and (min-width: 1024px) {
     margin-right: 30px;
-    width: 270px !important;
+    width: 222px !important;
+
+    & img {
+      object-fit: cover;
+    }
 
     & > div {
-      width: 270px !important;
+      width: 222px !important;
     }
   }
 
